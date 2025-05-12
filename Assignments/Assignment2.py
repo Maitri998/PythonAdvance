@@ -48,12 +48,20 @@ class EmployeeManagement:
 # Example usage
 def main():
     manager = EmployeeManagement()
+    #add employees
     manager.add_employee(1, "Alice", "HR")
     manager.add_employee(2, "Bob", "IT")
     manager.add_employee(3, "Charlie", "Finance")
-
+    manager.add_employee(4, "AliceA", "HR")
+    manager.add_employee(5, "BobB", "Admin")
+    manager.add_employee(6, "CharlieC", "Finance")
+    #display added employees
+    manager.display_employee()
     # Updating employees
-    manager.update_employee(2, department="Finance")
+    manager.update_employee(6, department="IT")
+    
+    #display updated employees
+    manager.display_employee()
 
     # Deleting employees
     manager.delete_employee(3)
