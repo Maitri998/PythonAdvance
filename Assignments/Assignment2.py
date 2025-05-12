@@ -22,10 +22,10 @@ class EmployeeManagement:
                 if name:
                     emp['name'] = name
                 if department:
-                    emp['department'] = department  # Fixed: use = instead of ==
+                    emp['department'] = department 
                 print(f"Employee {emp_id} updated successfully.")
                 return
-        print(f"Employee with ID {emp_id} not found.")  # Moved outside loop
+        print(f"Employee with ID {emp_id} not found.")  
 
     # Delete Employees
     def delete_employee(self, emp_id):
@@ -34,8 +34,7 @@ class EmployeeManagement:
                 self.employees.remove(emp)
                 print(f"Employee {emp_id} removed successfully.")
                 return
-        print(f"Employee {emp_id} does not exist.")  # Moved outside loop
-
+        print(f"Employee {emp_id} does not exist.") \
     # Display Employees
     def display_employee(self):
         if not self.employees:
@@ -45,7 +44,7 @@ class EmployeeManagement:
         for emp in self.employees:
             print(f"ID: {emp['id']}, Name: {emp['name']}, Department: {emp['department']}")
 
-# Example usage
+#usage
 def main():
     manager = EmployeeManagement()
     manager.add_employee(1, "Alice", "HR")
@@ -58,7 +57,7 @@ def main():
     # Deleting employees
     manager.delete_employee(3)
 
-    # Displaying all remaining employees
+    #  remaining employees
     manager.display_employee()
 
 if __name__ == "__main__":
