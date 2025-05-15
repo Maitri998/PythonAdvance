@@ -7,8 +7,7 @@ def main():
         format="%(asctime)s - %(levelname)s - %(message)s"
     )
 
-    # Example: Fetch log from server (if needed)
-    # fetch_log_from_server('host', 'username', 'password', 'remote_path', 'local_path')
+ 
 
     # Path to local log file
     file_path = "./logs/file_attendance.log"

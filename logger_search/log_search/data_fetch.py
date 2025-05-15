@@ -1,11 +1,7 @@
 import logging
 
 def search_log_entries(file_path, keyword, batch_size=10):
-    """
-    Searches for a keyword in a log file and returns results in batches.
-    python -m venv venv
 
-    """
     try:
         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
             batch = []
@@ -14,8 +10,8 @@ def search_log_entries(file_path, keyword, batch_size=10):
                     batch.append(line.strip())
                     if len(batch) == batch_size:
                         yield batch
-                        batch = []  # Reset batch after yielding
-            if batch:  # Yield remaining entries if any
+                        batch = []  
+            if batch:  
                 yield batch
     except FileNotFoundError:
         logging.error(f"File {file_path} not found.")
