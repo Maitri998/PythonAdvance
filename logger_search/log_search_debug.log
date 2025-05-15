@@ -1,0 +1,15 @@
+2025-05-15 13:28:54,355 - INFO - Starting search for keyword: absent
+2025-05-15 13:28:54,356 - ERROR - File ./logs/file_attendance.log not found.
+2025-05-15 13:28:54,356 - ERROR - An error occurred during the search process: [Errno 2] No such file or directory: 'file_attendance'
+2025-05-15 13:28:54,356 - INFO - Program terminated.
+2025-05-15 13:30:52,203 - INFO - Starting search for keyword: absent
+2025-05-15 13:30:52,204 - ERROR - File ./logs/file_attendance.log not found.
+2025-05-15 13:30:52,204 - ERROR - An error occurred during the search process: [Errno 2] No such file or directory: 'file_attendance'
+2025-05-15 13:30:52,209 - INFO - Program terminated.
+2025-05-15 13:37:16,436 - INFO - Starting search for keyword: ABSENT
+2025-05-15 13:37:16,444 - INFO - All matching entries displayed.
+2025-05-15 13:37:16,444 - INFO - Program terminated.
+2025-05-15 13:37:27,932 - INFO - Starting search for keyword: PRESENT
+2025-05-15 13:37:27,939 - INFO - All matching entries displayed.
+2025-05-15 13:37:27,940 - INFO - Program terminated.
+2025-05-15 13:37:42,812 - INFO - Starting search for keyword: Absent
